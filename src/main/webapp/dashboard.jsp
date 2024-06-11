@@ -88,13 +88,18 @@
 			<div class="relative w-full h-full bg-white-bone rounded-lg col-start-4 col-end-6 p-6">
 				<span class="absolute -top-4 left-2 font-bold uppercase text-white-bone bg-blue-dark px-3 py-2 rounded-full text-sm">Enfrentamientos</span>
 				<div class="mt-6 w-full px-3 py-2 flex justify-center items-center gap-3">
-					<select name="equipoA" id="equipoA" class="w-full px-3 py-2 bg-transparent border border-solid border-black rounded-lg">
+					<div class="grid gap-y-3 place-content-center place-items-center grid-cols-3 grd-rows-2">
+						<select name="equipoA" id="equipoA" class="w-full px-3 py-2 bg-transparent border border-solid border-black rounded-lg">
 						<option value="">--seleccione un equipo--</option>
-					</select>
-					<select name="equipoA" id="equipoA" class="w-full px-3 py-2 bg-transparent border border-solid border-black rounded-lg">
-						<option value="">--seleccione un equipo--</option>
-					</select>
-					<input type="datetime-local" class="w-full px-3 py-[.4rem] bg-transparent border border-solid border-black rounded-lg"/>
+						</select>
+						<span class="font-bold text-red-light">VS</span>
+						<select name="equipoA" id="equipoA" class="w-full px-3 py-2 bg-transparent border border-solid border-black rounded-lg">
+							<option value="">--seleccione un equipo--</option>
+						</select>
+						<input type="datetime-local" name="datetime_inicio" class="w-full px-3 py-[.4rem] bg-transparent border border-solid border-black rounded-lg"/>
+						<span class="font-bold text-red-light">a</span>
+						<input type="datetime-local" name="datetime_fin" class="w-full px-3 py-[.4rem] bg-transparent border border-solid border-black rounded-lg"/>
+					</div>
 					<button class="text-white-bone bg-green-dark rounded-lg px-3 py-2">
 						<i class="bi bi-plus-square-fill"></i>
 					</button>
